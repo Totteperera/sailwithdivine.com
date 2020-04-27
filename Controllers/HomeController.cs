@@ -23,7 +23,17 @@ namespace sailwithdivine.com.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Boat()
+        {
+            return View();
+        }
+
+        public IActionResult Crew()
+        {
+            return View();
+        }
+
+        public IActionResult Sail()
         {
             return View();
         }
