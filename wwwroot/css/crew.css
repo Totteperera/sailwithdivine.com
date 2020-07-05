@@ -1,0 +1,29 @@
+.crew-row {
+    padding: 30px 0;
+}
+
+.crew-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.crew-item__top {
+    width: 300px;
+}
+
+.crew-item__body {
+    padding: 1.25rem;
+    color: #67eaca;
+}
+
+
+@media (max-width: 768px) {
+    .crew-row {
+        padding: 0;
+    }
+
+    .crew-item {
+        padding: 10px 0;
+    }
+}

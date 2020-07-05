@@ -36,14 +36,14 @@ html {
 }
 
 .border-top {
-  border-top: 1px solid #e5e5e5;
+  border-top: 1px solid #b0f4e6 !important;
 }
 .border-bottom {
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid #b0f4e6 !important;
 }
 
 .box-shadow {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+  box-shadow: 0 .25rem .75rem rgba(103,234,202,.05);
 }
 
 button.accept-policy {
@@ -61,6 +61,10 @@ html {
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
+  background-color: #fcf9ec;
+  font-family: ingra, sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 .footer {
   position: absolute;
@@ -68,4 +72,76 @@ body {
   width: 100%;
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: kiro, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #12d3cf
+}
+
+p {
+  font-family: ingra, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.main-color
+{
+  color:#12d3cf !important;
+}
+
+.main-color:hover
+{
+  color: #67eaca !important;
+}
+
+.nav-link {
+  font-weight: bold;
+}
+
+.navbar-light .navbar-brand{
+  font-family: kiro, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #12d3cf
+}
+
+.navbar-light .navbar-brand:hover {
+  color: #67eaca;
 }
