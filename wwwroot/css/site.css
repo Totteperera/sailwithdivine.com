@@ -145,3 +145,41 @@ body {
 .navbar-light .navbar-brand:hover {
   color: #67eaca;
 }
+
+.instagram {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.instagram__logo {
+  width: 90px;
+  margin-right: 25px;
+}
+
+.instagram__text {
+  font-size: 40px;
+  font-family: kiro, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #12d3cf
+}
+
+.instagram__container:hover {
+  text-decoration: none;
+}
+
+
+@media (max-width: 768px) {
+  
+  .instagram {
+    margin-top: 40px;
+    flex-direction: column;
+  }
+
+  .instagram__logo {
+    width: 90px;
+    margin: 0 0 10px 0;
+  }
+
+}

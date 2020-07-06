@@ -33,6 +33,11 @@ namespace sailwithdivine.com.Controllers
             return View();
         }
 
+        public IActionResult Position()
+        {
+            return View();
+        }
+
         public IActionResult Sail()
         {
             return View();
