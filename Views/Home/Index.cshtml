@@ -10,20 +10,28 @@
     </div>
     <div class="img-header__icon-container">
         <div class="img-header__icon-item">
-            <svg class="icon icon-boat"><use xlink:href="#icon-boat"></use></svg>
-            <span>Ship</span>
+            <a asp-controller="Home" asp-action="Boat">
+                <svg class="icon icon-boat"><use xlink:href="#icon-boat"></use></svg>
+                <span>Ship</span>
+            </a>
         </div>
         <div class="img-header__icon-item">
-            <svg class="icon icon-instagram-sketched"><use xlink:href="#icon-instagram-sketched"></use></svg>
-            <span>Instagram</span>
+            <a href="href="https://www.instagram.com/sailwithdivine/" target="_blank">
+                <svg class="icon icon-instagram-sketched"><use xlink:href="#icon-instagram-sketched"></use></svg>
+                <span>Instagram</span>
+            </a>
         </div>
         <div class="img-header__icon-item">
-            <svg class="icon icon-user"><use xlink:href="#icon-user"></use></svg>
-            <span>Crew</span>
+            <a asp-controller="Home" asp-action="Crew">
+                <svg class="icon icon-user"><use xlink:href="#icon-user"></use></svg>
+                <span>Crew</span>
+            </a>
         </div>
         <div class="img-header__icon-item">
-            <svg class="icon icon-email"><use xlink:href="#icon-email"></use></svg>
-            <span>Contact us</span>
+            <a asp-controller="Home" asp-action="Contact">
+                <svg class="icon icon-email"><use xlink:href="#icon-email"></use></svg>
+                <span>Contact us</span>
+            </a>
         </div>
     </div>
 </section>
