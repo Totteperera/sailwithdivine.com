@@ -1,0 +1,7 @@
+@import url(https://use.typekit.net/rqc1uml.css);
+
+
+.icon-pin{fill:#9bc0d8}
+.absolute-header{height:100vh;width:100%;background-color:#9bc0d8}.absolute-header__image{min-height:80vh;background-repeat:no-repeat;background-size:contain;background-position:50%}.intro{margin-top:100px;background-color:#fff}.intro__title{text-align:center;font-weight:700}.intro__container{display:flex}
+body{position:relative;margin:0}*{box-sizing:border-box}.body-content{padding-left:15px;padding-right:15px}.carousel-caption p{font-size:20px;line-height:1.4}.carousel-inner .item img[src$=".svg"]{width:100%}#qrCode{margin:15px}@media screen and (max-width:767px){.carousel-caption{display:none}}
+body{font-family:montserrat,sans-serif;font-weight:200;font-style:normal}

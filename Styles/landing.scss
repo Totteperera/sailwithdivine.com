@@ -1,0 +1,29 @@
+﻿@import "content.scss";
+
+.absolute-header {
+    height: 100vh;
+    width: 100%;
+    background-color: $primary-color;
+
+    &__image {
+        min-height: 80vh;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+}
+
+
+.intro {
+    margin-top: 100px;
+    background-color: $white-color;
+
+    &__title {
+        text-align: center;
+        font-weight: bold;
+    }
+
+    &__container {
+        display: flex;
+    }
+}

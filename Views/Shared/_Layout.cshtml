@@ -4,58 +4,53 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - sailwithdivine.com</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" />
-    <link rel="stylesheet" href="~/css/crew.css" />
-    <link rel="stylesheet" href="~/css/boat.css" />
-    <link rel="stylesheet" href="https://use.typekit.net/rqc1uml.css">
-    <link rel="stylesheet" href="https://use.typekit.net/rqc1uml.css">
+    <link rel="stylesheet" href="~/css/site.min.css" />
+    @*<link rel="stylesheet" href="~/css/crew.css" />
+    <link rel="stylesheet" href="~/css/boat.css" />*@
+    @*<link rel="stylesheet" href="https://use.typekit.net/rqc1uml.css">
+    <link rel="stylesheet" href="https://use.typekit.net/rqc1uml.css">*@
     <link rel="icon" type="image/png" href="~/Content/favicon.png">
 </head>
 <body>
+    @*Definitions of the svgs*@
+    <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+            <symbol id="icon-pin" viewBox="0 0 32 32">
+                <path d="M16 0c-5.881 0-10.667 4.785-10.667 10.667 0 1.766 0.441 3.516 1.281 5.069l8.803 15.921c0.117 0.212 0.341 0.344 0.583 0.344s0.466-0.131 0.583-0.344l8.806-15.926c0.836-1.547 1.277-3.298 1.277-5.064 0-5.881-4.785-10.667-10.667-10.667zM16 16c-2.941 0-5.333-2.393-5.333-5.333s2.393-5.333 5.333-5.333 5.333 2.393 5.333 5.333c0 2.941-2.393 5.333-5.333 5.333z"></path>
+            </symbol>
+        </defs>
+    </svg>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">SailWithDivine</a> 
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link main-color" asp-area="" asp-controller="Home" asp-action="Boat">Boat</a>
-                        </li>
-                       @*  <li class="nav-item">
-                            <a class="nav-link main-color" asp-area="" asp-controller="Home" asp-action="Crew">Crew</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link main-color" asp-area="" asp-controller="Home" asp-action="Sail">Segla med oss</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link main-color" asp-area="" asp-controller="Home" asp-action="Project">Projektet</a>
-                        </li> *@
-                        <li class="nav-item">
-                            <a class="nav-link main-color" asp-area="" asp-controller="Home" asp-action="Position">Position</a>
-                        </li>
-                    </ul>
+        @*<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light box-shadow mb-3">
+                <div class="container">
+                    <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">SailWithDivine</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                        <ul class="navbar-nav flex-grow-1">
+                            <li class="nav-item">
+                                <a class="nav-link main-color" asp-area="" asp-controller="Home" asp-action="Boat">Boat</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link main-color" asp-area="" asp-controller="Home" asp-action="Position">Position</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>*@
     </header>
-    <div class="container mb-5">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
+    <main role="main">
+        @RenderBody()
+    </main>
 
-    <footer class="footer text-muted">
-        <div class="container">
-            &copy; 2020 - sailwithdivine.com
-        </div>
-    </footer>
+    @*<footer class="footer text-muted">
+            <div class="container">
+                &copy; 2020 - sailwithdivine.com
+            </div>
+        </footer>*@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @RenderSection("Scripts", required: false)
 </body>
