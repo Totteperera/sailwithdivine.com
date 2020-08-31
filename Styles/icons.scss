@@ -3,4 +3,13 @@
 
 .icon-pin {
     fill: $primary-color;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.icon-user, .icon-instagram-sketched, .icon-boat, .icon-email {
+    fill: $white-color;
+    width: 50px;
+    height: 50px;
 }

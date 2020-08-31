@@ -1,21 +1,85 @@
 ﻿@import "content.scss";
 
 .absolute-header {
-    height: 100vh;
+    height: 55vh;
     width: 100%;
     background-color: $primary-color;
 
     &__image {
-        min-height: 80vh;
+        min-height: 55vh;
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
     }
 }
 
+.img-header {
+    height: 70vh;
+    width: 100%;
+    position: relative;
+
+    &__image {
+        min-height: 70vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        box-shadow: inset 0 0 0 1000px rgba(0,0,0,.3);
+    }
+
+    &__text-container {
+        min-width: 400px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        margin-left: auto;
+        margin-right: auto;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        font-weight: bold;
+        font-size: 100px;
+    }
+
+    &__icon-container {
+        width: 500px;
+        position: absolute;
+        bottom: 15%;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__icon-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: $white-color;
+        position: relative;
+        top: 0;
+        transition: top ease 0.5s;
+
+        span {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        &:hover {
+            top: -5px;
+            cursor: pointer;
+        }
+    }
+}
 
 .intro {
     margin-top: 100px;
+    margin-bottom: 100px;
     background-color: $white-color;
 
     &__title {
@@ -25,5 +89,13 @@
 
     &__container {
         display: flex;
+        justify-content: center;
+        align-items: center;
     }
+}
+
+.instagram {
+    background-color: $grey-color;
+    padding-top: 100px;
+    padding-bottom: 50px;
 }
