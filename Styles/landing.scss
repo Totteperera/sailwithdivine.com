@@ -89,8 +89,15 @@
 
     &__container {
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
+    }
+
+    &__text-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        max-width: 640px;
     }
 }
 

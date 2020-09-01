@@ -1,0 +1,26 @@
+﻿@import "content.scss";
+
+.button {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -o-flex;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: .875rem .9375rem .875rem 1.25rem;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+    background-color: $primary-color;
+    color: $white-color;
+    font-size: 20px;
+    border: none;
+    font-weight: bold;
+
+    &:hover {
+        opacity: 0.7;
+        cursor: pointer;
+    }
+}

@@ -10,28 +10,20 @@
     </div>
     <div class="img-header__icon-container">
         <div class="img-header__icon-item">
-            <a asp-controller="Home" asp-action="Boat">
                 <svg class="icon icon-boat"><use xlink:href="#icon-boat"></use></svg>
                 <span>Ship</span>
-            </a>
         </div>
         <div class="img-header__icon-item">
-            <a href="href="https://www.instagram.com/sailwithdivine/" target="_blank">
                 <svg class="icon icon-instagram-sketched"><use xlink:href="#icon-instagram-sketched"></use></svg>
                 <span>Instagram</span>
-            </a>
         </div>
         <div class="img-header__icon-item">
-            <a asp-controller="Home" asp-action="Crew">
                 <svg class="icon icon-user"><use xlink:href="#icon-user"></use></svg>
                 <span>Crew</span>
-            </a>
         </div>
         <div class="img-header__icon-item">
-            <a asp-controller="Home" asp-action="Contact">
                 <svg class="icon icon-email"><use xlink:href="#icon-email"></use></svg>
                 <span>Contact us</span>
-            </a>
         </div>
     </div>
 </section>
@@ -41,7 +33,14 @@
         <h2 class="intro__title">Position</h2>
         <div class="intro__container">
             <svg class="icon icon-pin"><use xlink:href="#icon-pin"></use></svg>
-            <p>Click here to see our last registrered AIS Position</p>
+            <div class="intro__text-container">
+                <p>
+                    We are using an AIS transponder and reciver, which makes it possible to see our
+                    latest registered position when connected to a base station. It also makes it easier when sailing becuase
+                    we are able to see other boats with AIS and they see us.
+                </p>
+                <a asp-controller="Home" asp-action="Position" class="button">See position</a>
+            </div>
         </div>
     </div>
 </section>

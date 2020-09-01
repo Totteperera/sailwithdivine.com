@@ -1,0 +1,18 @@
+﻿@import "content.scss";
+
+.crew {
+    background-color: $primary-color;
+    height: 40vh;
+    padding-top: 100px;
+    text-align: center;
+
+    &__title {
+        margin: 0;
+    }
+
+    &__content {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+

@@ -1,0 +1,85 @@
+﻿@import "content.scss";
+
+.card {
+    &__container {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        margin-bottom: 60px;
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+        position: relative;
+        width: 100%;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+        display: flex;
+        justify-content: center;
+
+        &:hover .overlay-gradiant::before {
+            opacity: 0;
+            transition: all 0.2s ease-out;
+        }
+    }
+
+    &__item-container {
+        position: relative;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        max-width: 270px;
+        max-height: 360px;
+        box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, .1);
+        border-radius: 8px;
+        transition: .2s;
+
+        &:hover {
+            box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+        }
+    }
+
+    &__item-info {
+        position: absolute;
+        bottom: 30px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 3;
+        span {
+            font-weight: bold;
+            color: $white-color;
+            font-size: 20px;
+        }
+
+        .icon {
+            width: 30px;
+            height: 30px;
+            margin-left: 10px;
+        }
+    }
+    
+    &__img-holder {
+        border-radius: 5px 5px 0px 0px;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    &__img {
+        position: relative;
+        top: 0;
+        left: 0;
+        min-height: 100%;
+        width: 100%;
+        z-index: 2;
+        border-radius: 8px;
+    }
+}
