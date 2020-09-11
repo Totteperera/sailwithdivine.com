@@ -6,11 +6,13 @@
     padding-right: 15px;
     padding-left: 15px;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 
+    &--text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
 
     &__image {
         min-height: 40vh;

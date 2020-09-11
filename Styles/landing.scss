@@ -14,7 +14,6 @@
     }
 
     &__text-container {
-        min-width: 400px;
         position: absolute;
         left: 0;
         right: 0;
@@ -22,16 +21,29 @@
         top: 0;
         margin-left: auto;
         margin-right: auto;
-        color: white;
         justify-content: center;
         align-items: center;
         display: flex;
-        font-weight: bold;
-        font-size: 100px;
+        text-align: center;
+        padding-left: 15px;
+        padding-right: 15px;
+        color: $white-color;
+
+        h1 {
+            font-size: 2.3rem;
+        }
+
+        @include lg {
+            min-width: 400px;
+
+            h1 {
+                font-size: 3rem;
+            }
+        }
     }
 
     &__icon-container {
-        width: 500px;
+        width: 80%;
         position: absolute;
         bottom: 15%;
         margin-left: auto;
@@ -40,6 +52,10 @@
         right: 0;
         display: flex;
         justify-content: space-between;
+
+        @include lg {
+            width: 30%;
+        }
     }
 
     &__icon-item {
@@ -52,9 +68,13 @@
         transition: top ease 0.5s;
 
         span {
-            font-size: 20px;
+            font-size: 1rem;
             font-weight: bold;
             margin-top: 10px;
+
+            @include lg {
+                font-size: 1.4rem;
+            }
         }
 
         &:hover {
@@ -65,8 +85,14 @@
 }
 
 .intro {
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    @include lg {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
     background-color: $white-color;
 
     &__title {
@@ -78,14 +104,36 @@
         display: flex;
         justify-content: space-evenly;
         align-items: center;
+        flex-direction: column;
+
+        @include lg {
+            flex-direction: row;
+        }
+
+        .icon {
+            fill: $primary-color;
+            width: 100px;
+            height: 100px;
+            margin-bottom: 20px;
+
+            @include lg {
+                margin-right: 20px;
+            }
+        }
     }
 
     &__text-container {
         display: flex;
         flex-direction: column;
-        justify-content: end;
-        max-width: 640px;
+        align-items: center;
+
+        @include lg {
+            justify-content: end;
+            max-width: 640px;
+            align-items: flex-start;
+        }
     }
+
 }
 
 .instagram {
