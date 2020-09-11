@@ -1,4 +1,5 @@
-﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
+﻿@import "content.scss";
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
 for details on configuring this project to bundle and minify static web assets. */
 body {
     /*padding-top: 50px;
@@ -47,12 +48,15 @@ body {
 }
 
 .content {
-    max-width: 1280px;
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+
+    @include lg {
+        max-width: 1280px;
+    }
 }
 
 .embed-responsive {

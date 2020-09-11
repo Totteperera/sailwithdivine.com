@@ -1,18 +1,5 @@
 ﻿@import "content.scss";
 
-.absolute-header {
-    height: 55vh;
-    width: 100%;
-    background-color: $primary-color;
-
-    &__image {
-        min-height: 55vh;
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-    }
-}
-
 .img-header {
     height: 70vh;
     width: 100%;

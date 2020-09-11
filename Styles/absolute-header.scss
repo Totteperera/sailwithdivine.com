@@ -1,0 +1,37 @@
+﻿@import "content.scss";
+.absolute-header {
+    height: 40vh;
+    width: 100%;
+    background-color: $primary-color;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+    &__image {
+        min-height: 40vh;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+
+    &__title {
+        margin: 0;
+    }
+
+    @include lg {
+        height: 55vh;
+        width: 100%;
+
+        &__image {
+            min-height: 55vh;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+    }
+}
