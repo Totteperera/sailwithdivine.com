@@ -1,6 +1,13 @@
 ﻿.boat {
-    &__interior-contanier {
+    &__interior{
 
+        &-title {
+            text-align: center;
+        }
+
+        &-text {
+            margin-bottom: 50px;
+        }
     }
 
     &__interior-text-container {
