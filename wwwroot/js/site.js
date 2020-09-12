@@ -1,8 +1,11 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
-
-// Write your JavaScript code.
-
+﻿//iphone scroll
+window.addEventListener(
+    'touchmove',
+    function (e) {
+        e.preventDefault();
+    },
+    false
+);
 
 let scrollpos = window.scrollY
 let lastscrollpos = 0
@@ -15,7 +18,10 @@ const remove_class_on_scroll = () => header.classList.remove("navbar--hidden")
 window.addEventListener('scroll', function () {
     scrollpos = window.scrollY;
 
-    if (scrollpos > lastscrollpos || scrollpos >= header_height) { add_class_on_scroll() }
+    //if (scrollpos >= header_height) { add_class_on_scroll() }
+    //else 
+    if (scrollpos > lastscrollpos) { add_class_on_scroll() }
     else { remove_class_on_scroll() }
     lastscrollpos = scrollpos
 })
+
