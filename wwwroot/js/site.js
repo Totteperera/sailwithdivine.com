@@ -18,10 +18,12 @@ const remove_class_on_scroll = () => header.classList.remove("navbar--hidden")
 window.addEventListener('scroll', function () {
     scrollpos = window.scrollY;
 
-    //if (scrollpos >= header_height) { add_class_on_scroll() }
-    //else 
-    if (scrollpos > lastscrollpos) { add_class_on_scroll() }
+    if (scrollpos > lastscrollpos) {
+        add_class_on_scroll()
+    }
+    else if (scrollpos >= header_height) {  remove_class_on_scroll() }
     else { remove_class_on_scroll() }
+
     lastscrollpos = scrollpos
 })
 
