@@ -3,11 +3,11 @@
 
 .icon-user, .icon-instagram-sketched, .icon-boat, .icon-email {
     fill: $white-color;
-    width: 2.6rem;
-    height: 2.6rem;
+    width: 2.3rem;
+    height: 2.3rem;
 
     @include lg {
-        width: 3rem;
-        height: 3rem;
+        width: 2.6rem;
+        height: 2.6rem;
     }
 }

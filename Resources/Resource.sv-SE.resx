@@ -135,6 +135,9 @@
   <data name="ContactUs.Title" xml:space="preserve">
     <value>Kontakta oss</value>
   </data>
+  <data name="Cookiebanner.Text" xml:space="preserve">
+    <value>Vi använder oss utav cookies för att försäkra den bästa upplevelsen på sidan. Du samtycker användandet av cookies och kan fortsätta använda sidan genom att klicka på ok-knappen. </value>
+  </data>
   <data name="Crew.Title" xml:space="preserve">
     <value>Möt besättningen</value>
   </data>

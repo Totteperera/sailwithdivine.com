@@ -148,12 +148,12 @@
 
 .icon-user, .icon-instagram-sketched, .icon-boat, .icon-email {
   fill: #ffffff;
-  width: 2.6rem;
-  height: 2.6rem; }
+  width: 2.3rem;
+  height: 2.3rem; }
   @media (min-width: 992px) {
     .icon-user, .icon-instagram-sketched, .icon-boat, .icon-email {
-      width: 3rem;
-      height: 3rem; } }
+      width: 2.6rem;
+      height: 2.6rem; } }
 
 .img-header {
   height: 60vh;
@@ -217,12 +217,12 @@
     top: 0;
     transition: top ease 0.5s; }
     .img-header__icon-item span {
-      font-size: 1rem;
+      font-size: 0.7rem;
       font-weight: bold;
       margin-top: 10px; }
       @media (min-width: 992px) {
         .img-header__icon-item span {
-          font-size: 1.4rem; } }
+          font-size: 1.2rem; } }
     .img-header__icon-item:hover {
       top: -5px;
       cursor: pointer; }

@@ -35,4 +35,23 @@ document.addEventListener("DOMContentLoaded", function () {
         let flagContainerElement = flagElement.querySelector(".js-flag-selector-container");
         flagContainerElement.classList.toggle("navbar__flag-selector-container--open");
     });
+
+    //cookiebanner
+    
+    let cookiebanner = document.querySelector(".js-cookiebanner");
+
+    if (-1 === document.cookie.indexOf("readcookieagreement=")) {
+        setTimeout(function () {
+            cookiebanner.classList.add('cookiebanner--active');
+        }, 5000);
+    }
+
+    document.querySelector(".js-cookiebanner-button").addEventListener("click", function () {
+        cookiebanner.classList.remove("cookiebanner--active");
+        let t = new Date;
+
+        t.setTime(t.getTime() + 31536e6);
+        document.cookie = "readcookieagreement=true; expires=" + t.toGMTString() + ";"
+    });
+
 });
