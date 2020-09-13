@@ -2,6 +2,7 @@
     ViewData["Title"] = "SailWithDivine";
 }
 
+@model sailwithdivine.com.Models.Home.HomeViewModel;
 
 <section class="img-header">
     <div class="img-header__image" style="background-image:url('Content/bowangel.jpg')"></div>
@@ -12,25 +13,25 @@
         <a asp-controller="Boat" asp-action="Index">
             <div class="img-header__icon-item">
                 <svg class="icon icon-boat"><use xlink:href="#icon-boat"></use></svg>
-                <span>Ship</span>
+                <span>@Model.IconShipText</span>
             </div>
         </a>
         <a href="https://www.instagram.com/sailwithdivine/" target="_blank">
             <div class="img-header__icon-item">
                 <svg class="icon icon-instagram-sketched"><use xlink:href="#icon-instagram-sketched"></use></svg>
-                <span>Instagram</span>
+                <span>@Model.IconInstagramText</span>
             </div>
         </a>
         <a asp-controller="Crew" asp-action="Index">
             <div class="img-header__icon-item">
                 <svg class="icon icon-user"><use xlink:href="#icon-user"></use></svg>
-                <span>Crew</span>
+                <span>@Model.IconCrewText</span>
             </div>
         </a>
         <a asp-controller="ContactUs" asp-action="Index">
             <div class="img-header__icon-item">
                 <svg class="icon icon-email"><use xlink:href="#icon-email"></use></svg>
-                <span>Contact us</span>
+                <span>@Model.IconContactUsText</span>
             </div>
         </a>
     </div>
@@ -42,12 +43,8 @@
         <div class="intro__container">
             <svg class="icon icon-pin"><use xlink:href="#icon-pin"></use></svg>
             <div class="intro__text-container">
-                <p>
-                    We are using an AIS transponder and reciver, which makes it possible to see our
-                    latest registered position when connected to a base station. It also makes it easier when sailing becuase
-                    we are able to see other boats with AIS and they see us.
-                </p>
-                <a asp-controller="Position" asp-action="Index" class="button">See position</a>
+                <p>@Model.PositionText</p>
+                <a asp-controller="Position" asp-action="Index" class="button">@Model.PositionButtonText</a>
             </div>
         </div>
     </div>

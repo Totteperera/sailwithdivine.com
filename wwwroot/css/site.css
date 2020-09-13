@@ -28,6 +28,11 @@
         background-size: contain;
         background-position: center; } }
 
+.boat__interior-title {
+  text-align: center; }
+
+.boat__interior-text {
+  margin-bottom: 50px; }
 
 .button {
   display: -webkit-flex;
@@ -147,8 +152,8 @@
   height: 2.6rem; }
   @media (min-width: 992px) {
     .icon-user, .icon-instagram-sketched, .icon-boat, .icon-email {
-      width: 4rem;
-      height: 4rem; } }
+      width: 3rem;
+      height: 3rem; } }
 
 .img-header {
   height: 60vh;
@@ -281,6 +286,8 @@
     opacity: 0;
     visibility: hidden; }
   .navbar__container {
+    display: flex;
+    justify-content: space-between;
     padding: 6px;
     margin-left: auto;
     margin-right: auto;
@@ -288,7 +295,9 @@
   .navbar__logo {
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    flex: 1;
+    flex-basis: 0; }
     .navbar__logo img {
       width: 60px;
       height: 60px; }
@@ -296,6 +305,43 @@
         .navbar__logo img {
           width: 100px;
           height: 100px; } }
+  .navbar__flag-container {
+    position: relative;
+    flex: 1;
+    flex-basis: 0;
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+    cursor: pointer; }
+    .navbar__flag-container .icon {
+      width: 40px;
+      height: 40px;
+      margin-right: 40px;
+      margin-left: 40px; }
+  .navbar__flag-selector-container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 110px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 0 0 5px 5px;
+    justify-content: space-around;
+    box-shadow: 0 0 1px 0 rgba(10, 22, 70, 0.06), 0 3px 3px -1px rgba(10, 22, 70, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: .25s ease-in-out;
+    transform: translateY(-100%);
+    cursor: pointer; }
+    .navbar__flag-selector-container--open {
+      transform: translateY(0);
+      opacity: 1;
+      visibility: visible; }
+
+.navbar__container::before {
+  content: "";
+  flex: 1;
+  flex-basis: 0; }
 
 .overlay-gradiant {
   position: absolute;
@@ -331,9 +377,7 @@ for details on configuring this project to bundle and minify static web assets. 
 body {
   position: relative;
   margin: 0;
-  height: 100%;
-  width: 100%;
-  overflow: auto; }
+  -webkit-overflow-scrolling: touch; }
 
 * {
   box-sizing: border-box; }

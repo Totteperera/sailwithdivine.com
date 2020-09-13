@@ -1,14 +1,18 @@
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Localization;
+using Microsoft.AspNetCore.Localization.Routing;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Options;
 
 namespace sailwithdivine.com
 {
@@ -25,6 +29,8 @@ namespace sailwithdivine.com
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
+            services.AddLocalization(options => options.ResourcesPath = "Resources");
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -46,6 +52,13 @@ namespace sailwithdivine.com
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
+            var supportedCultures = new[] { "sv-SE", "en-US" };
+            var localizationOptions = new RequestLocalizationOptions().SetDefaultCulture(supportedCultures[0])
+                .AddSupportedCultures(supportedCultures)
+                .AddSupportedUICultures(supportedCultures);
+
+            app.UseRequestLocalization(localizationOptions);
+
             app.UseRouting();
 
             app.UseAuthorization();
@@ -54,7 +67,7 @@ namespace sailwithdivine.com
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{culture=sv}/{controller=Home}/{action=Index}/{id?}");
             });
         }
     }

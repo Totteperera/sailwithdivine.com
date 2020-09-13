@@ -27,3 +27,12 @@ window.addEventListener('scroll', function () {
     lastscrollpos = scrollpos
 })
 
+document.addEventListener("DOMContentLoaded", function () {
+    // flag
+    let flagElement = document.querySelector(".js-flag-selector");
+    flagElement.addEventListener('click', function () {
+        console.log('hej')
+        let flagContainerElement = flagElement.querySelector(".js-flag-selector-container");
+        flagContainerElement.classList.toggle("navbar__flag-selector-container--open");
+    });
+});

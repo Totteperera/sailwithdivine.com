@@ -2,11 +2,13 @@
     ViewData["Title"] = "Crew";
 }
 
+@model sailwithdivine.com.Models.Position.PositionViewModel;
+
 <div class="img-header">
     <div class="img-header__image" style="background-image:url('Content/harbour.jpg')"></div>
     <div class="img-header__text-container">
-        <h1>Position</h1>
-        <p>Zoom out on the map and look for a pink dot that says Divine</p>
+        <h1>@Model.Title</h1>
+        <p>@Model.Subtitle</p>
     </div>
 </div>
 

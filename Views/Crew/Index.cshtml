@@ -1,10 +1,12 @@
 ﻿@{
     ViewData["Title"] = "Crew";
 }
+@model sailwithdivine.com.Models.Crew.CrewViewModel;
+
 <div class="img-header">
     <div class="img-header__image" style="background-image:url('Content/Crew/crew.jpg')"></div>
     <div class="img-header__text-container">
-        <h1>Meet the sailors!</h1>
+        <h1>@Model.Title</h1>
     </div>
 </div>
 
