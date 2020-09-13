@@ -13,7 +13,8 @@ namespace sailwithdivine.com.Models.Header
 
     public class CountryModel
     {
-        public string CurrentCountryFlag { get; set; }
-        public string CurrentCountryName { get; set; }
+        public string CountryFlag { get; set; }
+        public string CountryName { get; set; }
+        public string Culture { get; set; }
     }
 }

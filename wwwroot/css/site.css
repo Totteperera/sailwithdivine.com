@@ -314,16 +314,22 @@
     align-items: center;
     cursor: pointer; }
     .navbar__flag-container .icon {
-      width: 40px;
-      height: 40px;
-      margin-right: 40px;
-      margin-left: 40px; }
+      width: 35px;
+      height: 35px;
+      margin-right: 20px;
+      margin-left: 20px; }
+      @media (min-width: 992px) {
+        .navbar__flag-container .icon {
+          width: 40px;
+          height: 40px;
+          margin-right: 40px;
+          margin-left: 40px; } }
   .navbar__flag-selector-container {
     position: absolute;
     display: flex;
     align-items: center;
-    top: 110px;
-    padding: 20px;
+    top: 72px;
+    padding: 20px 6px 20px 20px;
     background: #ffffff;
     border-radius: 0 0 5px 5px;
     justify-content: space-around;
@@ -332,11 +338,21 @@
     visibility: hidden;
     transition: .25s ease-in-out;
     transform: translateY(-100%);
-    cursor: pointer; }
+    cursor: pointer;
+    right: -6px; }
+    @media (min-width: 992px) {
+      .navbar__flag-selector-container {
+        top: 110px;
+        padding: 20px 0 20px 20px;
+        right: 0; } }
     .navbar__flag-selector-container--open {
       transform: translateY(0);
       opacity: 1;
       visibility: visible; }
+    .navbar__flag-selector-container a {
+      display: flex;
+      align-items: center;
+      color: #333333; }
 
 .navbar__container::before {
   content: "";

@@ -1,5 +1,9 @@
 ﻿@model sailwithdivine.com.Models.Header.HeaderViewModel;
 
+@{ 
+    var returnUrl = string.IsNullOrEmpty(Context.Request.Path) ? "~/" : $"~{Context.Request.Path.Value}";
+}
+
 <nav class="navbar">
     <div class="navbar__container">
         <div class="navbar__logo">
@@ -8,10 +12,12 @@
             </a>
         </div>
         <div class="navbar__flag-container js-flag-selector">
-            <svg class="icon @Model.Current.CurrentCountryFlag"><use xlink:href="#@Model.Current.CurrentCountryFlag"></use></svg>
+            <svg class="icon @Model.Current.CountryFlag"><use xlink:href="#@Model.Current.CountryFlag"></use></svg>
             <div class="navbar__flag-selector-container js-flag-selector-container">
-                <span>@Model.AvailableCountry.CurrentCountryName</span>
-                <svg class="icon @Model.AvailableCountry.CurrentCountryFlag"><use xlink:href="#@Model.AvailableCountry.CurrentCountryFlag"></use></svg>
+                <a asp-controller="Language" asp-action="SetLanguage" asp-all-route-data="@(new Dictionary<string, string> { { "culture", Model.AvailableCountry.Culture }, { "returnUrl" , returnUrl} })">
+                    <span>@Model.AvailableCountry.CountryName</span>
+                    <svg class="icon @Model.AvailableCountry.CountryFlag"><use xlink:href="#@Model.AvailableCountry.CountryFlag"></use></svg>
+                </a>
             </div>
         </div>
     </div>

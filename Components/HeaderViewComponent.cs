@@ -1,7 +1,10 @@
-﻿using Microsoft.AspNetCore.Localization;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Localization;
 using sailwithdivine.com.Models.Header;
+using System;
+using System.Linq;
 
 namespace sailwithdivine.com.Components
 {
@@ -23,17 +26,22 @@ namespace sailwithdivine.com.Components
             {
                 Current = new CountryModel
                 {
-                    CurrentCountryName = _localizer[$"Header.Country.{currentCultureName}"],
-                    CurrentCountryFlag = $"icon-{currentCultureName}"
+                    CountryName = _localizer[$"Header.Country.{currentCultureName}"],
+                    CountryFlag = $"icon-{currentCultureName}",
+                    Culture = currentCultureName
+
                 },
                 AvailableCountry = new CountryModel
                 {
-                    CurrentCountryName = _localizer[$"Header.Country.{otherCultureName}"],
-                    CurrentCountryFlag = $"icon-{otherCultureName}"
+                    CountryName = _localizer[$"Header.Country.{otherCultureName}"],
+                    CountryFlag = $"icon-{otherCultureName}",
+                    Culture = otherCultureName
                 }
             };
 
             return View(model);
         }
+
+
     }
 }

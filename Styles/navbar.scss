@@ -56,10 +56,17 @@
         cursor: pointer;
 
         .icon {
-            width: 40px;
-            height: 40px;
-            margin-right: 40px;
-            margin-left: 40px;
+            width: 35px;
+            height: 35px;
+            margin-right: 20px;
+            margin-left: 20px;
+
+            @include lg {
+                width: 40px;
+                height: 40px;
+                margin-right: 40px;
+                margin-left: 40px;
+            }
         }
     }
 
@@ -67,8 +74,8 @@
         position: absolute;
         display: flex;
         align-items: center;
-        top: 110px;
-        padding: 20px;
+        top: 72px;
+        padding: 20px 6px 20px 20px;
         background: $white-color;
         border-radius: 0 0 5px 5px;
         justify-content: space-around;
@@ -78,11 +85,24 @@
         transition: .25s ease-in-out;
         transform: translateY(-100%);
         cursor: pointer;
+        right: -6px;
+
+        @include lg {
+            top: 110px;
+            padding: 20px 0 20px 20px;
+            right: 0;
+        }
 
         &--open {
             transform: translateY(0);
             opacity: 1;
             visibility: visible;
+        }
+
+        a {
+            display: flex;
+            align-items: center;
+            color: $black-color;
         }
     }
 }
