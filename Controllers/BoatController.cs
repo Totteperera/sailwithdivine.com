@@ -21,7 +21,7 @@ namespace sailwithdivine.com.Controllers
             var model = new BoatViewModel
             {
                 ImageUrls = _webHostEnvironment.WebRootFileProvider.GetDirectoryContents("Content/Boat/Interior/")
-                .Select(x => $"Content/Boat/Interior/{x.Name}").ToList(),
+                .Select(x => $"../Content/Boat/Interior/{x.Name}").ToList(),
                 Title = _localizer["Boat.Title"],
                 Subtitle = _localizer["Boat.Subtitle"],
                 InteriorTitle = _localizer["Boat.Interior.Title"],
