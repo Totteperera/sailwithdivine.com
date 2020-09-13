@@ -11,7 +11,7 @@
                 <img alt="logo" src="~/Content/logo-round.png" />
             </a>
         </div>
-        <div class="navbar__flag-container js-flag-selector">
+        <div class="navbar__flag-container js-flag-selector noSelect">
             <svg class="icon @Model.Current.CountryFlag"><use xlink:href="#@Model.Current.CountryFlag"></use></svg>
             <div class="navbar__flag-selector-container js-flag-selector-container">
                 <a asp-controller="Language" asp-action="SetLanguage" asp-all-route-data="@(new Dictionary<string, string> { { "culture", Model.AvailableCountry.Culture }, { "returnUrl" , returnUrl} })">
