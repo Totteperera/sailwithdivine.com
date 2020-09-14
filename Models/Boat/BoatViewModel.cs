@@ -11,5 +11,16 @@ namespace sailwithdivine.com.Models.Boat
         public string InteriorText { get; set; }
         public string LayoutTitle { get; set; }
         public string LayoutText { get; set; }
+        public string EquipmentTitle { get; set; }
+        public string IconSignal { get; set; }
+        public string IconAutopilot { get; set; }
+        public string IconRadar { get; set; }
+        public string IconMap { get; set; }
+        public string IconFire { get; set; }
+        public string IconEngine { get; set; }
+        public string IconLifeRaft { get; set; }
+        public string IconInflatable { get; set; }
+        public string IconFishing { get; set; }
+        public string IconSolar { get; set; }
     }
 }

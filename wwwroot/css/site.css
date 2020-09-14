@@ -46,6 +46,46 @@
   justify-content: center;
   align-items: center; }
 
+.boat__equipment-title {
+  text-align: center;
+  color: #ffffff; }
+
+.boat__equipment-container {
+  margin-top: 60px;
+  background-color: #9bc0d8;
+  padding-top: 50px; }
+
+.boat__equipment-content {
+  display: flex;
+  flex-wrap: wrap; }
+
+.boat__equipment-item {
+  margin-bottom: 60px;
+  flex: 0 0 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 250px;
+  justify-content: space-between;
+  padding: 30px;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 1.5rem;
+  text-align: center; }
+  @media (min-width: 768px) {
+    .boat__equipment-item {
+      flex: 0 0 50%;
+      max-width: 50%; } }
+  @media (min-width: 992px) {
+    .boat__equipment-item {
+      flex: 0 0 33.333333%;
+      max-width: 33.333333%; } }
+  .boat__equipment-item .icon {
+    width: 120px;
+    height: 120px;
+    fill: #ffffff; }
+
 .button {
   display: -webkit-flex;
   display: -moz-flex;

@@ -117,6 +117,39 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Boat.Equipment.Title" xml:space="preserve">
+    <value>Utrustning</value>
+  </data>
+  <data name="Boat.Icon.Autopilot" xml:space="preserve">
+    <value>Autopilot</value>
+  </data>
+  <data name="Boat.Icon.Engine" xml:space="preserve">
+    <value>VP MD22A 48HK</value>
+  </data>
+  <data name="Boat.Icon.Fire" xml:space="preserve">
+    <value>5 st brandsläckare</value>
+  </data>
+  <data name="Boat.Icon.Fishing" xml:space="preserve">
+    <value>Havsfiskespö</value>
+  </data>
+  <data name="Boat.Icon.Inflatable" xml:space="preserve">
+    <value>Dinge med motor</value>
+  </data>
+  <data name="Boat.Icon.LifeRaft" xml:space="preserve">
+    <value>8-manna livflotte</value>
+  </data>
+  <data name="Boat.Icon.Map" xml:space="preserve">
+    <value>Plotter</value>
+  </data>
+  <data name="Boat.Icon.Radar" xml:space="preserve">
+    <value>Radar</value>
+  </data>
+  <data name="Boat.Icon.Signal" xml:space="preserve">
+    <value>AIS T/R</value>
+  </data>
+  <data name="Boat.Icon.Solar" xml:space="preserve">
+    <value>300 W solpaneler</value>
+  </data>
   <data name="Boat.Interior.Text" xml:space="preserve">
     <value>Divine har invändigt en väl disponerad yta med tio st kojplatser fördelat på fem hytter. Det finns två toaletter och en gång mellan de två sittbrunnarna. I salongen finns det ett stort bord och två soffor som rymmer hela besättningen.</value>
   </data>

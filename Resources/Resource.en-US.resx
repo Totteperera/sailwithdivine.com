@@ -117,6 +117,39 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Boat.Equipment.Title" xml:space="preserve">
+    <value>Equipment</value>
+  </data>
+  <data name="Boat.Icon.Autopilot" xml:space="preserve">
+    <value>Autopilot</value>
+  </data>
+  <data name="Boat.Icon.Engine" xml:space="preserve">
+    <value>VP MD22A 48HK</value>
+  </data>
+  <data name="Boat.Icon.Fire" xml:space="preserve">
+    <value>5 fire extinguishers</value>
+  </data>
+  <data name="Boat.Icon.Fishing" xml:space="preserve">
+    <value>Deep sea fishing rod</value>
+  </data>
+  <data name="Boat.Icon.Inflatable" xml:space="preserve">
+    <value>Dinghie with motor</value>
+  </data>
+  <data name="Boat.Icon.LifeRaft" xml:space="preserve">
+    <value>Life raft 8 people</value>
+  </data>
+  <data name="Boat.Icon.Map" xml:space="preserve">
+    <value>Plotter</value>
+  </data>
+  <data name="Boat.Icon.Radar" xml:space="preserve">
+    <value>Radar</value>
+  </data>
+  <data name="Boat.Icon.Signal" xml:space="preserve">
+    <value>AIS T/R</value>
+  </data>
+  <data name="Boat.Icon.Solar" xml:space="preserve">
+    <value>300 W solar panels</value>
+  </data>
   <data name="Boat.Interior.Text" xml:space="preserve">
     <value>Divine has well-disposed space inside with 10 beds divided into 5 cabins, with a salon that can fit about 8-10 people. It also has two toilets and a passage between the two cockpits.</value>
   </data>
