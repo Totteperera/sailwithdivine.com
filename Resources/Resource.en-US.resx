@@ -123,6 +123,12 @@
   <data name="Boat.Interior.Title" xml:space="preserve">
     <value>Interior</value>
   </data>
+  <data name="Boat.Layout.Text" xml:space="preserve">
+    <value>Below we can see the different rooms inside of the boat. with Cabins (C), toilets (WC), kitchen (K) and salon (S).</value>
+  </data>
+  <data name="Boat.Layout.Title" xml:space="preserve">
+    <value>Layout</value>
+  </data>
   <data name="Boat.Subtitle" xml:space="preserve">
     <value>The swedish pearl</value>
   </data>

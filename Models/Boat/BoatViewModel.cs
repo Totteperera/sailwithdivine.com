@@ -9,5 +9,7 @@ namespace sailwithdivine.com.Models.Boat
         public string Subtitle { get; set; }
         public string InteriorTitle { get; set; }
         public string InteriorText { get; set; }
+        public string LayoutTitle { get; set; }
+        public string LayoutText { get; set; }
     }
 }

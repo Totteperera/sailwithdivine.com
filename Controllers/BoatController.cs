@@ -25,7 +25,9 @@ namespace sailwithdivine.com.Controllers
                 Title = _localizer["Boat.Title"],
                 Subtitle = _localizer["Boat.Subtitle"],
                 InteriorTitle = _localizer["Boat.Interior.Title"],
-                InteriorText = _localizer["Boat.Interior.Text"]
+                InteriorText = _localizer["Boat.Interior.Text"],
+                LayoutTitle = _localizer["Boat.Layout.Title"],
+                LayoutText = _localizer["Boat.Layout.Text"]
             };
 
             return View(model);

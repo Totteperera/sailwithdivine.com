@@ -34,6 +34,18 @@
 .boat__interior-text {
   margin-bottom: 50px; }
 
+.boat__layout-title {
+  text-align: center; }
+
+.boat__layout-img {
+  width: 100%;
+  max-width: 550px; }
+
+.boat__layout-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 .button {
   display: -webkit-flex;
   display: -moz-flex;
@@ -138,6 +150,45 @@
   border-radius: 8px; }
 
 
+
+.cookiebanner {
+  visibility: hidden;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  right: 0;
+  bottom: 15px;
+  margin: auto;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 8px 4px 21px 8px rgba(10, 22, 70, 0.06), 0 3px 3px -1px rgba(10, 22, 70, 0.1);
+  transition: 0.25s ease-in-out;
+  transform: translateY(120%);
+  opacity: 0; }
+  .cookiebanner--active {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0%); }
+  .cookiebanner__container {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    @media (min-width: 992px) {
+      .cookiebanner__container {
+        padding: 30px;
+        flex-direction: row; } }
+  .cookiebanner__text {
+    font-size: 0.7rem; }
+    @media (min-width: 992px) {
+      .cookiebanner__text {
+        flex: 1;
+        font-size: 1rem; } }
+  .cookiebanner__button {
+    max-height: 51px;
+    text-align: center;
+    display: flex;
+    justify-content: center; }
 
 .crew__content {
   padding-top: 50px;

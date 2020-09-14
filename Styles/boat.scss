@@ -1,5 +1,5 @@
 ﻿.boat {
-    &__interior{
+    &__interior {
 
         &-title {
             text-align: center;
@@ -10,7 +10,18 @@
         }
     }
 
-    &__interior-text-container {
-            
+    &__layout-title {
+        text-align: center;
+    }
+
+    &__layout-img {
+        width: 100%;
+        max-width: 550px;
+    }
+
+    &__layout-img-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }

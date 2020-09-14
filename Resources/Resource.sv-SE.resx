@@ -123,6 +123,12 @@
   <data name="Boat.Interior.Title" xml:space="preserve">
     <value>Inredning</value>
   </data>
+  <data name="Boat.Layout.Text" xml:space="preserve">
+    <value>Nedan ser vi de olika rummen inne i båten. Med kabiner (C), toaletter (WC), salong (S), och kök (K). </value>
+  </data>
+  <data name="Boat.Layout.Title" xml:space="preserve">
+    <value>Planlösning</value>
+  </data>
   <data name="Boat.Subtitle" xml:space="preserve">
     <value>Den svenska pärlan</value>
   </data>
