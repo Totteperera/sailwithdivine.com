@@ -8,7 +8,15 @@
         }
 
         &-text {
-            margin-bottom: 50px;
+            @include md {
+                margin-bottom: 50px;
+            }
+        }
+
+        &-slide {
+            @include md {
+                display: none;
+            }
         }
     }
 

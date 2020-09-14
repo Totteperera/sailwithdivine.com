@@ -31,8 +31,13 @@
 .boat__interior-title {
   text-align: center; }
 
-.boat__interior-text {
-  margin-bottom: 50px; }
+@media (min-width: 768px) {
+  .boat__interior-text {
+    margin-bottom: 50px; } }
+
+@media (min-width: 768px) {
+  .boat__interior-slide {
+    display: none; } }
 
 .boat__layout-title {
   text-align: center; }
@@ -113,6 +118,11 @@
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
+  .card__container--hide-mobile {
+    display: none; }
+    @media (min-width: 768px) {
+      .card__container--hide-mobile {
+        display: flex; } }
 
 .card__item {
   position: relative;

@@ -11,11 +11,38 @@
     </div>
 </div>
 
+<div class="overlap__container">
+    <div class="content overlap__content">
+        <div class="overlap__text-container">
+            <h2>@Model.OverlapTitle</h2>
+            @Html.Raw(Model.OverlapText)
+        </div>
+        <div class="overlap__image" style="background-image:url('../Content/Boat/front-view.jpg')">
+        </div>
+    </div>
+</div>
+
 <div class="content">
 
     <h2 class="boat__interior-title">@Model.InteriorTitle</h2>
     <p class="boat__interior-text">@Model.InteriorText</p>
-    <div class="card__container">
+
+    <div class="boat__interior-slide">
+        <div class="carousel">
+            <nav></nav>
+            <div class="container">
+                @foreach (var src in Model.ImageUrls)
+                {
+                <div class="slide">
+                    <img src="@src" class="card__img">
+                </div>
+                }
+            </div>
+        </div>
+    </div>
+
+
+    <div class="card__container card__container--hide-mobile">
         @foreach (var src in Model.ImageUrls)
         {
             <div class="card__item">
@@ -27,6 +54,7 @@
                 </div>
             </div>
         }
+
     </div>
 
     <h2 class="boat__layout-title">@Model.LayoutTitle</h2>

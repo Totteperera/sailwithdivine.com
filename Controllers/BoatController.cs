@@ -38,7 +38,9 @@ namespace sailwithdivine.com.Controllers
                 IconMap = _localizer["Boat.Icon.Map"],
                 IconRadar = _localizer["Boat.Icon.Radar"],
                 IconSignal = _localizer["Boat.Icon.Signal"],
-                IconSolar = _localizer["Boat.Icon.Solar"]
+                IconSolar = _localizer["Boat.Icon.Solar"],
+                OverlapText = _localizer["Boat.Overlap.Text"],
+                OverlapTitle = _localizer["Boat.Overlap.Title"]
             };
 
             return View(model);

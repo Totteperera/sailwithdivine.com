@@ -162,6 +162,12 @@
   <data name="Boat.Layout.Title" xml:space="preserve">
     <value>Planlösning</value>
   </data>
+  <data name="Boat.Overlap.Text" xml:space="preserve">
+    <value>&lt;p&gt;Här kan du hitta information om båten, så som: &lt;/br&gt;&lt;/br&gt; - Utrustning &lt;/br&gt; - Interiör &lt;/br&gt; - Layout&lt;/p&gt;</value>
+  </data>
+  <data name="Boat.Overlap.Title" xml:space="preserve">
+    <value>Innehåll</value>
+  </data>
   <data name="Boat.Subtitle" xml:space="preserve">
     <value>Den svenska pärlan</value>
   </data>

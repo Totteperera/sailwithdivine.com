@@ -162,6 +162,12 @@
   <data name="Boat.Layout.Title" xml:space="preserve">
     <value>Layout</value>
   </data>
+  <data name="Boat.Overlap.Text" xml:space="preserve">
+    <value>&lt;p&gt;Here you can find information about the boat: &lt;/br&gt;&lt;/br&gt; - Equipment &lt;/br&gt; - Interior &lt;/br&gt; - Layout&lt;/p&gt;</value>
+  </data>
+  <data name="Boat.Overlap.Title" xml:space="preserve">
+    <value>Content</value>
+  </data>
   <data name="Boat.Subtitle" xml:space="preserve">
     <value>The swedish pearl</value>
   </data>

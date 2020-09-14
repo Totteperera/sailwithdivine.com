@@ -1,0 +1,50 @@
+﻿@import "content.scss";
+
+.overlap {
+
+    &__container {
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+        @include lg {
+            margin-top: 100px;
+            margin-bottom: 100px;
+        }
+    }
+
+    &__content {
+        display: flex;
+        margin: auto;
+        word-break: break-word;
+    }
+
+    &__text-container {
+        position: relative;
+        width: 100%;
+        margin: 46px 0;
+        padding: 1.75rem 2.75rem;
+        z-index: 2;
+        background-color: $primary-color;
+        color: $white-color;
+
+        @include md {
+            width: 54%;
+        }
+    }
+
+    &__image {
+        position: relative;
+        padding: 2.5rem;
+        z-index: 1;
+        display: none;
+        background-size: cover;
+        background-position: bottom;
+        background-repeat: no-repeat;
+
+        @include md {
+            width: 51%;
+            left: -65px;
+            display: block;
+        }
+    }
+}

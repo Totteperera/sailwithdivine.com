@@ -6,6 +6,14 @@
         display: flex;
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+
+        &--hide-mobile {
+            display: none;
+
+            @include md {
+                display: flex;
+            }
+        }
     }
 
     &__item {
