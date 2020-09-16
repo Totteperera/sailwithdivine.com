@@ -192,6 +192,15 @@
   <data name="Header.Country.sv-SE" xml:space="preserve">
     <value>Svenska</value>
   </data>
+  <data name="Home.Countdown.Crossing" xml:space="preserve">
+    <value>Korsar nu!</value>
+  </data>
+  <data name="Home.Countdown.Days" xml:space="preserve">
+    <value>dagar!</value>
+  </data>
+  <data name="Home.Countdown.Title" xml:space="preserve">
+    <value>Korsar atlanten om...</value>
+  </data>
   <data name="Home.Icon.ContactUs" xml:space="preserve">
     <value>Kontakta oss</value>
   </data>

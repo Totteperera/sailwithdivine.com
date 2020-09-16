@@ -152,3 +152,30 @@
     padding-top: 100px;
     padding-bottom: 50px;
 }
+
+
+.countdown {
+    background-color: $white-color;
+
+    &__circle {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: $primary-color;
+        color: $white-color;
+        margin: 40px 70px;
+        padding: 20px;
+        border-radius: 50%;
+        width: auto;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        width: 400px;
+        height: 400px;
+        text-align: center;
+    }
+
+    &__text {
+        margin: 0;
+    }
+}

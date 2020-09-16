@@ -199,6 +199,46 @@
   z-index: 2;
   border-radius: 8px; }
 
+.carousel {
+  justify-content: flex-start;
+  overflow: hidden;
+  padding: 40px 0;
+  position: relative;
+  width: 100%; }
+
+.carousel > .container {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  transform: translate3d(0, 0, 0);
+  transition: transform 600ms; }
+
+.carousel > nav {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  z-index: 1; }
+
+.carousel > nav a {
+  color: #000;
+  font-size: 14px;
+  opacity: .2;
+  text-decoration: none; }
+
+.carousel > nav a:hover {
+  opacity: .5; }
+
+.carousel > nav a.current {
+  opacity: 1; }
+
+.carousel .slide {
+  flex-shrink: 0;
+  line-height: 1.4;
+  text-align: center;
+  width: 100%; }
+
 
 
 .cookiebanner {
@@ -370,6 +410,27 @@
   padding-top: 100px;
   padding-bottom: 50px; }
 
+.countdown {
+  background-color: #ffffff; }
+  .countdown__circle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #9bc0d8;
+    color: #ffffff;
+    margin: 40px 70px;
+    padding: 20px;
+    border-radius: 50%;
+    width: auto;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 400px;
+    text-align: center; }
+  .countdown__text {
+    margin: 0; }
+
 .navbar {
   position: sticky;
   background: #ffffff;
@@ -459,6 +520,45 @@
   content: "";
   flex: 1;
   flex-basis: 0; }
+
+.overlap__container {
+  margin-top: 50px;
+  margin-bottom: 50px; }
+  @media (min-width: 992px) {
+    .overlap__container {
+      margin-top: 100px;
+      margin-bottom: 100px; } }
+
+.overlap__content {
+  display: flex;
+  margin: auto;
+  word-break: break-word; }
+
+.overlap__text-container {
+  position: relative;
+  width: 100%;
+  margin: 46px 0;
+  padding: 1.75rem 2.75rem;
+  z-index: 2;
+  background-color: #9bc0d8;
+  color: #ffffff; }
+  @media (min-width: 768px) {
+    .overlap__text-container {
+      width: 54%; } }
+
+.overlap__image {
+  position: relative;
+  padding: 2.5rem;
+  z-index: 1;
+  display: none;
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat; }
+  @media (min-width: 768px) {
+    .overlap__image {
+      width: 51%;
+      left: -65px;
+      display: block; } }
 
 .overlay-gradiant {
   position: absolute;
@@ -581,6 +681,12 @@ h1 {
 h2 {
   font-size: 2.3rem; }
 
+h3 {
+  font-size: 2rem; }
+
+h4 {
+  font-size: 1.7rem; }
+
 p {
   font-size: 1rem; }
 
@@ -589,6 +695,10 @@ p {
     font-size: 4rem; }
   h2 {
     font-size: 3rem; }
+  h3 {
+    font-size: 2.7rem; }
+  h3 {
+    font-size: 2rem; }
   p {
     font-size: 1.5rem; } }
 

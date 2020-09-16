@@ -24,6 +24,21 @@ namespace sailwithdivine.com.Controllers
 
         public IActionResult Index()
         {
+            var atlanticDate = DateTime.Parse("2020-11-22");
+            var daysLeft = (atlanticDate.Date - DateTime.UtcNow.Date).TotalDays;
+
+            var result = "";
+
+            if(DateTime.UtcNow.Date.CompareTo(atlanticDate) > 0 || DateTime.UtcNow.Date.CompareTo(atlanticDate) == 0)
+            {
+                result = _localizer["Home.Countdown.Crossing"];
+            }
+            else
+            {
+                result = $"{daysLeft} {_localizer["Home.Countdown.Days"]}";
+            }
+
+
             var model = new HomeViewModel
             {
                 IconContactUsText = _localizer["Home.Icon.ContactUs"],
@@ -31,7 +46,9 @@ namespace sailwithdivine.com.Controllers
                 IconInstagramText = _localizer["Home.Icon.Instagram"],
                 IconShipText = _localizer["Home.Icon.Ship"],
                 PositionButtonText = _localizer["Home.Position.Button"],
-                PositionText = _localizer["Home.Position.Text"]
+                PositionText = _localizer["Home.Position.Text"],
+                CountdownTitle = _localizer["Home.Countdown.Title"],
+                CountdownDays = result
             };
 
             return View(model);

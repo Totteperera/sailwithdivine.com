@@ -14,5 +14,7 @@ namespace sailwithdivine.com.Models.Home
         public string IconContactUsText { get; set; }
         public string PositionText { get; set; }
         public string PositionButtonText { get; set; }
+        public string CountdownTitle { get; set; }
+        public string CountdownDays { get; set; }
     }
 }
