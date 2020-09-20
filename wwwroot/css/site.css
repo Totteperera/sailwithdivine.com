@@ -425,9 +425,13 @@
     height: auto;
     margin-left: auto;
     margin-right: auto;
-    width: 400px;
-    height: 400px;
-    text-align: center; }
+    text-align: center;
+    width: 90vw;
+    height: 90vw; }
+    @media (min-width: 768px) {
+      .countdown__circle {
+        width: 400px;
+        height: 400px; } }
   .countdown__text {
     margin: 0; }
 
