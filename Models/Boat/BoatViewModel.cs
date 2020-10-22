@@ -24,5 +24,8 @@ namespace sailwithdivine.com.Models.Boat
         public string IconInflatable { get; set; }
         public string IconFishing { get; set; }
         public string IconSolar { get; set; }
+        public string IconGrill { get; set; }
+        public string IconFridge { get; set; }
+        public string IconFreezer { get; set; }
     }
 }

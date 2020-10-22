@@ -112,6 +112,9 @@
   .button:hover {
     opacity: 0.7;
     cursor: pointer; }
+  .button--secondary {
+    background-color: #ffffff;
+    color: #9bc0d8; }
 
 .card__container {
   display: -ms-flexbox;
@@ -563,6 +566,8 @@
       width: 51%;
       left: -65px;
       display: block; } }
+  .overlap__image--top {
+    background-position: top; }
 
 .overlay-gradiant {
   position: absolute;

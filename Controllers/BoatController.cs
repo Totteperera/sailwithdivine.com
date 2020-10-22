@@ -39,6 +39,9 @@ namespace sailwithdivine.com.Controllers
                 IconRadar = _localizer["Boat.Icon.Radar"],
                 IconSignal = _localizer["Boat.Icon.Signal"],
                 IconSolar = _localizer["Boat.Icon.Solar"],
+                IconGrill = _localizer["Boat.Icon.Grill"],
+                IconFridge = _localizer["Boat.Icon.Fridge"],
+                IconFreezer = _localizer["Boat.Icon.Freezer"],
                 OverlapText = _localizer["Boat.Overlap.Text"],
                 OverlapTitle = _localizer["Boat.Overlap.Title"]
             };

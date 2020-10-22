@@ -132,6 +132,15 @@
   <data name="Boat.Icon.Fishing" xml:space="preserve">
     <value>Havsfiskespö</value>
   </data>
+  <data name="Boat.Icon.Freezer" xml:space="preserve">
+    <value>Kyl/Frys 30L</value>
+  </data>
+  <data name="Boat.Icon.Fridge" xml:space="preserve">
+    <value>Kyl 50L</value>
+  </data>
+  <data name="Boat.Icon.Grill" xml:space="preserve">
+    <value>Grill</value>
+  </data>
   <data name="Boat.Icon.Inflatable" xml:space="preserve">
     <value>Dinge med motor</value>
   </data>
@@ -224,5 +233,38 @@
   </data>
   <data name="Position.Title" xml:space="preserve">
     <value>Position</value>
+  </data>
+  <data name="SailWithUs.Hero.Title" xml:space="preserve">
+    <value>Segla med oss!</value>
+  </data>
+  <data name="SailWithUs.Section1.Text" xml:space="preserve">
+    <value>Är du trött på hösten i Sverige och sugen på att följa med oss på vårt äventyr? Vi söker dig som vill segla med oss! Vår grundidé är att segla med människor med olika bakgrund för att få lite nya perspektiv på hur kulturen och klimaten är i andra länder.
+Det är bra om du har tidigare erfarenhet av segling men det är absolut inget krav. Vi söker dig som är social och anpassningsbar efter de begränsningar som finns på en båt som tex brist på sötvatten, internet, el och egentid. Då vi bor tätt tillsammans på båten är det absolut viktigaste att alla trivs tillsammans. Oftast delar man hytt, antingen i våningshytt eller i dubbelsäng beroende på hur bekväm man känner sig med sällskapet.</value>
+  </data>
+  <data name="SailWithUs.Section1.Title" xml:space="preserve">
+    <value>Vill du segla med oss?</value>
+  </data>
+  <data name="SailWithUs.Section2.Text" xml:space="preserve">
+    <value>På båten använder vi oss av paying crew vilket betyder att man är en del i crewet och hjälper till med att lägga loss, att segla, laga mat och att städa. Vi tar även en avgift, en ”båthyra”, per dygn som ska motsvara vad det kostar att bo på tex ett vandrarhem i Australien eller liknande.
+Förutom båthyran delar alla på båten på hamnavgift, dieselkostnader samt matkostnader, vilket vi köper in tillsamman. 
+Kostnaden per dag varierar beroende på hur länge man har tänkt att segla med oss.</value>
+  </data>
+  <data name="SailWithUs.Section2.Title" xml:space="preserve">
+    <value>Paying crew</value>
+  </data>
+  <data name="SailWithUs.Section3.Text" xml:space="preserve">
+    <value>Har du kanske gått i tankarna att göra en längre segling över Atlanten, men inte riktigt kommit till skott pga tidsbrist eller bristen på tidigare erfarenheter?
+Den 22 november lägger vi loss från Las Palmas med Atlantic Rally for Cruisers (ARC), en tävling som går mellan Las Palmas och St. Lucia i Västindien varje år. Vi åker tillsammans med ca 200 båtar och har trackers på båtarna för att synas under hela resans gång. Seglatsen kommer att ta ca tre veckor.
+Platserna är begränsade och vi kommer maximalt vara sex personer över Atlanten. På grund av Covid-19 kan vi tyvärr inte erbjuda några platser till dig som tillhör en riskgrupp. 
+För att segla med oss över Atlanten ser vi helst att du har en del tidigare erfarenhet av segling och vet vad det innebär att vara fast på en båt under en längre tid.</value>
+  </data>
+  <data name="SailWithUs.Section3.Title" xml:space="preserve">
+    <value>Vill du segla över Atlanten med oss?</value>
+  </data>
+  <data name="SailWithUs.Section4.Text" xml:space="preserve">
+    <value>Vi heter Totte och Oscar och är två barndomsvänner som kände att det var dags att prova på något nytt, så vi köpte en segelbåt. Vi hittade vår Diva 451 som känns som den optimala båten för en segling som denna. Båten är 45 fot lång och har fem kabiner, vilket gör att vi har en del utrymme för att få med oss gäster och vänner på vårt äventyr. Totte är utbildad dataingenjör och jobbar med programmering medan Oscar har jobbat som charterskeppare de senaste åren.</value>
+  </data>
+  <data name="SailWithUs.Section4.Title" xml:space="preserve">
+    <value>Om oss</value>
   </data>
 </root>

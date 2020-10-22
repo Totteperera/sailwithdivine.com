@@ -23,4 +23,9 @@
         opacity: 0.7;
         cursor: pointer;
     }
+
+    &--secondary {
+        background-color: $white-color;
+        color: $primary-color;
+    }
 }
